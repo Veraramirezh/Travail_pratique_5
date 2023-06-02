@@ -120,13 +120,13 @@ class MyGame(arcade.Window):
             self.computer_attack.draw()
         elif self.game_state == GameState.GAME_OVER:
             if self.player_score == 3:
-                arcade.draw_text("Vous avez gagné la partie",
+                arcade.draw_text("Vous avez gagné",
                                  0, 350, arcade.csscolor.HONEYDEW, 20, width=SCREEN_WIDTH, align="center")
             elif self.computer_score == 3:
                 arcade.draw_text("perdu!!!",
                                  0, 350, arcade.csscolor.HONEYDEW, 20, width=SCREEN_WIDTH, align="center")
 
-            arcade.draw_text("La partie est terminée.",
+            arcade.draw_text("La partie est fini.",
                              0, 400, arcade.csscolor.HONEYDEW, 20, width=SCREEN_WIDTH, align="center")
             arcade.draw_text("click sur espace pour continuer et me donner lopportunité de te battre",
                              0, 450, arcade.csscolor.HONEYDEW, 20, width=SCREEN_WIDTH, align="center")
